@@ -27,7 +27,7 @@
         </table>
         <hr>
         <ul class="list">
-            <li v-for="(item, key, index) in page_items" :key="index">
+            <li v-for="(item, key, index) in page_items" v-bind:key="index">
                 <span @click="select(item)">{{item.title}}({{item.created}})</span>
             </li>
         </ul>
